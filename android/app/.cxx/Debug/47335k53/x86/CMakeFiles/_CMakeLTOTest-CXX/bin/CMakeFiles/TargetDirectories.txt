@@ -1,0 +1,4 @@
+D:/SIH/SiliRual/SiliRualNative/android/app/.cxx/Debug/47335k53/x86/CMakeFiles/_CMakeLTOTest-CXX/bin/CMakeFiles/foo.dir
+D:/SIH/SiliRual/SiliRualNative/android/app/.cxx/Debug/47335k53/x86/CMakeFiles/_CMakeLTOTest-CXX/bin/CMakeFiles/boo.dir
+D:/SIH/SiliRual/SiliRualNative/android/app/.cxx/Debug/47335k53/x86/CMakeFiles/_CMakeLTOTest-CXX/bin/CMakeFiles/edit_cache.dir
+D:/SIH/SiliRual/SiliRualNative/android/app/.cxx/Debug/47335k53/x86/CMakeFiles/_CMakeLTOTest-CXX/bin/CMakeFiles/rebuild_cache.dir

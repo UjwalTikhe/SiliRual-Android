@@ -1,0 +1,12 @@
+D:/SIH/SiliRual/SiliRualNative/android/app/.cxx/RelWithDebInfo/632ju1oo/x86_64/CMakeFiles/appmodules.dir
+D:/SIH/SiliRual/SiliRualNative/android/app/.cxx/RelWithDebInfo/632ju1oo/x86_64/CMakeFiles/edit_cache.dir
+D:/SIH/SiliRual/SiliRualNative/android/app/.cxx/RelWithDebInfo/632ju1oo/x86_64/CMakeFiles/rebuild_cache.dir
+D:/SIH/SiliRual/SiliRualNative/android/app/.cxx/RelWithDebInfo/632ju1oo/x86_64/AsyncStorageSpec_autolinked_build/CMakeFiles/react_codegen_AsyncStorageSpec.dir
+D:/SIH/SiliRual/SiliRualNative/android/app/.cxx/RelWithDebInfo/632ju1oo/x86_64/AsyncStorageSpec_autolinked_build/CMakeFiles/edit_cache.dir
+D:/SIH/SiliRual/SiliRualNative/android/app/.cxx/RelWithDebInfo/632ju1oo/x86_64/AsyncStorageSpec_autolinked_build/CMakeFiles/rebuild_cache.dir
+D:/SIH/SiliRual/SiliRualNative/android/app/.cxx/RelWithDebInfo/632ju1oo/x86_64/safeareacontext_autolinked_build/CMakeFiles/react_codegen_safeareacontext.dir
+D:/SIH/SiliRual/SiliRualNative/android/app/.cxx/RelWithDebInfo/632ju1oo/x86_64/safeareacontext_autolinked_build/CMakeFiles/edit_cache.dir
+D:/SIH/SiliRual/SiliRualNative/android/app/.cxx/RelWithDebInfo/632ju1oo/x86_64/safeareacontext_autolinked_build/CMakeFiles/rebuild_cache.dir
+D:/SIH/SiliRual/SiliRualNative/android/app/.cxx/RelWithDebInfo/632ju1oo/x86_64/rnscreens_autolinked_build/CMakeFiles/react_codegen_rnscreens.dir
+D:/SIH/SiliRual/SiliRualNative/android/app/.cxx/RelWithDebInfo/632ju1oo/x86_64/rnscreens_autolinked_build/CMakeFiles/edit_cache.dir
+D:/SIH/SiliRual/SiliRualNative/android/app/.cxx/RelWithDebInfo/632ju1oo/x86_64/rnscreens_autolinked_build/CMakeFiles/rebuild_cache.dir

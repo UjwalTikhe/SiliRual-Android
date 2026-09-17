@@ -1,0 +1,6 @@
+D:\SiliRualNative\android\app\.cxx\RelWithDebInfo\243b382i\arm64-v8a\AsyncStorageSpec_autolinked_build\CMakeFiles\react_codegen_AsyncStorageSpec.dir\AsyncStorageSpec-generated.cpp.o
+D:\SiliRualNative\android\app\.cxx\RelWithDebInfo\243b382i\arm64-v8a\AsyncStorageSpec_autolinked_build\CMakeFiles\react_codegen_AsyncStorageSpec.dir\react\renderer\components\AsyncStorageSpec\ComponentDescriptors.cpp.o
+D:\SiliRualNative\android\app\.cxx\RelWithDebInfo\243b382i\arm64-v8a\AsyncStorageSpec_autolinked_build\CMakeFiles\react_codegen_AsyncStorageSpec.dir\react\renderer\components\AsyncStorageSpec\EventEmitters.cpp.o
+D:\SiliRualNative\android\app\.cxx\RelWithDebInfo\243b382i\arm64-v8a\AsyncStorageSpec_autolinked_build\CMakeFiles\react_codegen_AsyncStorageSpec.dir\react\renderer\components\AsyncStorageSpec\Props.cpp.o
+D:\SiliRualNative\android\app\.cxx\RelWithDebInfo\243b382i\arm64-v8a\AsyncStorageSpec_autolinked_build\CMakeFiles\react_codegen_AsyncStorageSpec.dir\react\renderer\components\AsyncStorageSpec\ShadowNodes.cpp.o
+D:\SiliRualNative\android\app\.cxx\RelWithDebInfo\243b382i\arm64-v8a\AsyncStorageSpec_autolinked_build\CMakeFiles\react_codegen_AsyncStorageSpec.dir\react\renderer\components\AsyncStorageSpec\States.cpp.o

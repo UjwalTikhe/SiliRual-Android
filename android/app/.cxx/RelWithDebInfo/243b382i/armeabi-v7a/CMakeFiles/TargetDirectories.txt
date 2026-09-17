@@ -1,0 +1,15 @@
+D:/SiliRualNative/android/app/.cxx/RelWithDebInfo/243b382i/armeabi-v7a/CMakeFiles/appmodules.dir
+D:/SiliRualNative/android/app/.cxx/RelWithDebInfo/243b382i/armeabi-v7a/CMakeFiles/edit_cache.dir
+D:/SiliRualNative/android/app/.cxx/RelWithDebInfo/243b382i/armeabi-v7a/CMakeFiles/rebuild_cache.dir
+D:/SiliRualNative/android/app/.cxx/RelWithDebInfo/243b382i/armeabi-v7a/AsyncStorageSpec_autolinked_build/CMakeFiles/react_codegen_AsyncStorageSpec.dir
+D:/SiliRualNative/android/app/.cxx/RelWithDebInfo/243b382i/armeabi-v7a/AsyncStorageSpec_autolinked_build/CMakeFiles/edit_cache.dir
+D:/SiliRualNative/android/app/.cxx/RelWithDebInfo/243b382i/armeabi-v7a/AsyncStorageSpec_autolinked_build/CMakeFiles/rebuild_cache.dir
+D:/SiliRualNative/android/app/.cxx/RelWithDebInfo/243b382i/armeabi-v7a/rngesturehandler_codegen_autolinked_build/CMakeFiles/react_codegen_rngesturehandler_codegen.dir
+D:/SiliRualNative/android/app/.cxx/RelWithDebInfo/243b382i/armeabi-v7a/rngesturehandler_codegen_autolinked_build/CMakeFiles/edit_cache.dir
+D:/SiliRualNative/android/app/.cxx/RelWithDebInfo/243b382i/armeabi-v7a/rngesturehandler_codegen_autolinked_build/CMakeFiles/rebuild_cache.dir
+D:/SiliRualNative/android/app/.cxx/RelWithDebInfo/243b382i/armeabi-v7a/safeareacontext_autolinked_build/CMakeFiles/react_codegen_safeareacontext.dir
+D:/SiliRualNative/android/app/.cxx/RelWithDebInfo/243b382i/armeabi-v7a/safeareacontext_autolinked_build/CMakeFiles/edit_cache.dir
+D:/SiliRualNative/android/app/.cxx/RelWithDebInfo/243b382i/armeabi-v7a/safeareacontext_autolinked_build/CMakeFiles/rebuild_cache.dir
+D:/SiliRualNative/android/app/.cxx/RelWithDebInfo/243b382i/armeabi-v7a/rnscreens_autolinked_build/CMakeFiles/react_codegen_rnscreens.dir
+D:/SiliRualNative/android/app/.cxx/RelWithDebInfo/243b382i/armeabi-v7a/rnscreens_autolinked_build/CMakeFiles/edit_cache.dir
+D:/SiliRualNative/android/app/.cxx/RelWithDebInfo/243b382i/armeabi-v7a/rnscreens_autolinked_build/CMakeFiles/rebuild_cache.dir

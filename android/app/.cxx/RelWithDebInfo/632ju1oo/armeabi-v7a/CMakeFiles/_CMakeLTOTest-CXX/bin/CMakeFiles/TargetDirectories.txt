@@ -1,0 +1,4 @@
+D:/SIH/SiliRual/SiliRualNative/android/app/.cxx/RelWithDebInfo/632ju1oo/armeabi-v7a/CMakeFiles/_CMakeLTOTest-CXX/bin/CMakeFiles/foo.dir
+D:/SIH/SiliRual/SiliRualNative/android/app/.cxx/RelWithDebInfo/632ju1oo/armeabi-v7a/CMakeFiles/_CMakeLTOTest-CXX/bin/CMakeFiles/boo.dir
+D:/SIH/SiliRual/SiliRualNative/android/app/.cxx/RelWithDebInfo/632ju1oo/armeabi-v7a/CMakeFiles/_CMakeLTOTest-CXX/bin/CMakeFiles/edit_cache.dir
+D:/SIH/SiliRual/SiliRualNative/android/app/.cxx/RelWithDebInfo/632ju1oo/armeabi-v7a/CMakeFiles/_CMakeLTOTest-CXX/bin/CMakeFiles/rebuild_cache.dir
