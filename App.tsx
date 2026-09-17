@@ -100,45 +100,12 @@ function SplashScreen({ onComplete }: { onComplete: () => void }) {
 }
 
 function Welcome({ onNext }: { onNext: (mode: "using" | "helping") => void }) {
-  const [showLanguageMenu, setShowLanguageMenu] = useState(false);
-  const [selectedLanguage, setSelectedLanguage] = useState(0);
-  const { setLanguage } = useTranslation();
-  
-  const handleLanguageSelect = (index: number) => {
-    setSelectedLanguage(index);
-    setLanguage(languages[index].code);
-    setShowLanguageMenu(false);
-  };
-  
   return (
     <ScrollView style={styles.welcomeContainer}>
       <View style={styles.welcomeHeader}>
-        <View style={styles.headerContent}>
-          <View style={styles.ministryBadge}>
-            <Text style={styles.ministryBadgeText}>Ministry of Health & Family Welfare</Text>
-          </View>
-          <TouchableOpacity 
-            style={styles.languageBtn}
-            onPress={() => setShowLanguageMenu(!showLanguageMenu)}
-          >
-            <Text style={styles.languageBtnIcon}>🌐</Text>
-            <Text style={styles.languageBtnText}>{languages[selectedLanguage].native}</Text>
-          </TouchableOpacity>
+        <View style={styles.ministryBadge}>
+          <Text style={styles.ministryBadgeText}>Ministry of Health & Family Welfare</Text>
         </View>
-        {showLanguageMenu && (
-          <View style={styles.languageMenu}>
-            {languages.map((lang, i) => (
-              <TouchableOpacity 
-                key={lang.code} 
-                style={[styles.languageMenuItem, selectedLanguage === i && styles.languageMenuItemSelected]}
-                onPress={() => handleLanguageSelect(i)}
-              >
-                <Text style={styles.languageMenuItemText}>{lang.native}</Text>
-                <Text style={styles.languageMenuItemSubtext}>{lang.name}</Text>
-              </TouchableOpacity>
-            ))}
-          </View>
-        )}
       </View>
       
       <View style={styles.heroSection}>
@@ -150,11 +117,11 @@ function Welcome({ onNext }: { onNext: (mode: "using" | "helping") => void }) {
       
       <View style={styles.welcomeActions}>
         <TouchableOpacity style={styles.actionButton} onPress={() => onNext("using")}>
-          <Text style={styles.actionButtonText}>{t("using")}</Text>
+          <Text style={styles.actionButtonText}>I am using SILIRUAL</Text>
         </TouchableOpacity>
         
         <TouchableOpacity style={styles.actionButton} onPress={() => onNext("helping")}>
-          <Text style={styles.actionButtonText}>{t("helping")}</Text>
+          <Text style={styles.actionButtonText}>I am helping someone</Text>
         </TouchableOpacity>
       </View>
       
@@ -618,7 +585,6 @@ function ElderApp({ name, onLogout }: { name: string; onLogout: () => void }) {
   const [view, setView] = useState<ElderView>("today");
   const [activeGame, setActiveGame] = useState<string | null>(null);
   const [showMemoryMatch, setShowMemoryMatch] = useState(false);
-  const { t } = useTranslation();
   
   const renderView = () => {
     if (activeGame) {
@@ -798,24 +764,6 @@ function ElderApp({ name, onLogout }: { name: string; onLogout: () => void }) {
         return (
           <View style={styles.dashboard}>
             <Text style={styles.sectionTitle}>Settings</Text>
-            <View style={styles.settingsSection}>
-              <Text style={styles.settingsSectionTitle}>Language</Text>
-              <View style={styles.languageSelector}>
-                {languages.map((lang, i) => (
-                  <TouchableOpacity
-                    key={lang.code}
-                    style={[styles.languageOption, language === lang.code && styles.languageOptionSelected]}
-                    onPress={() => {
-                      setLanguage(lang.code);
-                      languageState = lang.code;
-                    }}
-                  >
-                    <Text style={styles.languageOptionNative}>{lang.native}</Text>
-                    <Text style={styles.languageOptionName}>{lang.name}</Text>
-                  </TouchableOpacity>
-                ))}
-              </View>
-            </View>
             <ToggleRow title="Sound" text="Hear helpful sounds" value={true} onChange={() => {}} />
             <ToggleRow title="Large text" text="Make text bigger" value={false} onChange={() => {}} />
             <TouchableOpacity style={styles.settingItem} onPress={() => setView("privacy")}>
@@ -914,7 +862,7 @@ function ElderApp({ name, onLogout }: { name: string; onLogout: () => void }) {
             style={[styles.navItem, view === v && styles.navItemActive]}
             onPress={() => setView(v as ElderView)}
           >
-            <Text style={styles.navText}>{t(v)}</Text>
+            <Text style={styles.navText}>{v.charAt(0).toUpperCase() + v.slice(1)}</Text>
           </TouchableOpacity>
         ))}
       </View>
@@ -922,137 +870,10 @@ function ElderApp({ name, onLogout }: { name: string; onLogout: () => void }) {
   );
 }
 
-// ============ LANGUAGE SUPPORT ============
-
-const languages = [
-  { code: "en", name: "English", native: "English" },
-  { code: "hi", name: "Hindi", native: "हिन्दी" },
-  { code: "as", name: "Assamese", native: "অসমীয়া" },
-  { code: "bn", name: "Bengali", native: "বাংলা" },
-  { code: "ne", name: "Nepali", native: "नेपाली" },
-  { code: "mni", name: "Manipuri", native: "মৈতৈলোন্" },
-];
-
-const translations: Record<string, Record<string, string>> = {
-  en: {
-    welcome: "Welcome",
-    using: "I am using SILIRUAL",
-    helping: "I am helping someone",
-    forMyself: "For myself",
-    asFamily: "As a family member",
-    asCaregiver: "As a caregiver",
-    settings: "Settings",
-    logout: "Log out",
-    games: "Games",
-    memories: "Memories",
-    help: "Help",
-    today: "Today",
-    activities: "Activities",
-    reminders: "Reminders",
-    routine: "Routine",
-  },
-  hi: {
-    welcome: "स्वागत",
-    using: "मैं SILIRUAL का उपयोग कर रहा हूं",
-    helping: "मैं किसी की मदद कर रहा हूं",
-    forMyself: "अपने लिए",
-    asFamily: "परिवार के रूप में",
-    asCaregiver: "देखभालक के रूप में",
-    settings: "सेटिंग्स",
-    logout: "लॉग आउट",
-    games: "खेल",
-    memories: "यादें",
-    help: "मदद",
-    today: "आज",
-    activities: "गतिविधियां",
-    reminders: "याद दिलाए",
-    routine: "दिनचर्या",
-  },
-  as: {
-    welcome: "স্বাগত",
-    using: "মই চিলিৰুৱাল ব্যৱহাৰ কৰি",
-    helping: "মই কাৰো মদদ কৰি",
-    forMyself: "নিজৰ বাবে",
-    asFamily: "পৰিয়াৰ হিচাপে",
-    asCaregiver: "দেখভালক হিচাপে",
-    settings: "ছেটিংস",
-    logout: "লগ আউট",
-    games: "খেল",
-    memories: "স্মৃতি",
-    help: "সহায",
-    today: "আজি",
-    activities: "কাৰ্যকলাপ",
-    reminders: "স্মৰণ",
-    routine: "দৈনিক কাৰ্যসূচী",
-  },
-  bn: {
-    welcome: "স্বাগত",
-    using: "আমি সিলিরুয়াল ব্যবহার করছি",
-    helping: "আমি কারো সাহায করছি",
-    forMyself: "নিজের জন্য",
-    asFamily: "পরিবার হিসেবে",
-    asCaregiver: "যত্নিকার হিসেবে",
-    settings: "সেটিংস",
-    logout: "লগ আউট",
-    games: "খেলা",
-    memories: "স্মৃতি",
-    help: "সাহায",
-    today: "আজ",
-    activities: "কার্যকলাপ",
-    reminders: "স্মরণ",
-    routine: "দৈনিক রুটিন",
-  },
-  ne: {
-    welcome: "स्वागत",
-    using: "म सिलिरुयाल प्रयोग गर्दै",
-    helping: "म कसैको सहयोग गर्दै",
-    forMyself: "आफ्नै लागि",
-    asFamily: "परिवारको रूपमा",
-    asCaregiver: "हेर्नेकारको रूपमा",
-    settings: "सेटिङहरू",
-    logout: "लग आउट",
-    games: "खेल",
-    memories: "स्मृति",
-    help: "सहाय",
-    today: "आज",
-    activities: "गतिविधि",
-    reminders: "स्मरण",
-    routine: "दैनिक दिनचर्या",
-  },
-  mni: {
-    welcome: "স্বাগত",
-    using: "অঙিং সিলিৰুয়াল শীজিন্নবা",
-    helping: "অঙিং অমা শেমশিন্নবা",
-    forMyself: "অহানবা",
-    asFamily: "পরিবারক হিচাপে",
-    asCaregiver: "শেমশিন্নবা শেমগিদা",
-    settings: "সেটিংস",
-    logout: "লগ আউট",
-    games: "খেল",
-    memories: "লৈমাংশিং",
-    help: "শেমশিন",
-    today: "অদু",
-    activities: "কার্যকলাপ",
-    reminders: "শেমশিন",
-    routine: "দৈনিক কার্য",
-  },
-};
-
-// ============ HELPER APP COMPONENTS ============
-
-function useTranslation() {
-  const [language, setLanguage] = useState("en");
-  
-  const t = (key: string): string => {
-    return translations[language]?.[key] || translations["en"][key] || key;
-  };
-  
-  return { language, setLanguage, t };
-}
 
 function HelperApp({ role, onLogout }: { role: "family" | "caregiver"; onLogout: () => void }) {
   const [view, setView] = useState<"home" | "elders" | "alerts" | "tasks" | "health" | "progress" | "memories" | "location" | "reminders" | "settings" | "privacy" | "terms">("home");
-  const { language, setLanguage, t } = useTranslation();
+  const [language, setLanguage] = useState("en");
   
   const eldersUnderCare = [
     { id: 1, name: "Anima Das", age: 72, status: "Well", lastActive: "2 hours ago", location: "Home", nextTask: "Evening medication at 6 PM" },
